@@ -3,6 +3,7 @@
 -- Any language supporting list comprehension expresses this so elegantly
 -- Try writing it in X programming language - :P
 -- #Haskell #Pascal #Triangle #List #Comprehension #Combinatorics #Fun #Example
+-- #Lazy #Evaluation
 module Fun where
 	pascal = [ncr_list i | i <- [0..] ]
 	       where ncr_list i = [ncr i j | j <- [0..i] ]
