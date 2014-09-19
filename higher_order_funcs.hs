@@ -19,8 +19,9 @@ module HOF where
        l_foldr f v (x:xs) = f x ( l_foldr f v xs )
 
        -- Foldl  -- #TODO
-       -- foldl f v [] = v
-       -- 
+       l_foldl f v [] = v
+--       l_foldl f v (x:xs) = l_foldl f (f x) xs
+       
 
        -- Zip
        l_zip _ [] = []
@@ -54,5 +55,5 @@ module HOF where
 
        -- Reverse
        l_rev [] = []
-       -- #TODO l_rev (x:xs) = l_rev xs : x : []
+       l_rev (x:xs) = l_rev xs ++ x
 
